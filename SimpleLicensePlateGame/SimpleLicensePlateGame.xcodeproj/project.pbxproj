@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E45442872C42D8E800476598 /* SimpleLicensePlateGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442862C42D8E800476598 /* SimpleLicensePlateGameApp.swift */; };
+		E45442892C42D8E800476598 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442882C42D8E800476598 /* ContentView.swift */; };
+		E454428B2C42D8EB00476598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E454428A2C42D8EB00476598 /* Assets.xcassets */; };
+		E454428E2C42D8EB00476598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E454428D2C42D8EB00476598 /* Preview Assets.xcassets */; };
+		E45442982C42D8EC00476598 /* SimpleLicensePlateGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442972C42D8EC00476598 /* SimpleLicensePlateGameTests.swift */; };
+		E45442A22C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442A12C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift */; };
+		E45442A42C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442A32C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift */; };
+		E45442B12C42DA7400476598 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B02C42DA7400476598 /* State.swift */; };
+		E45442B32C42DAA700476598 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B22C42DAA700476598 /* StateViewModel.swift */; };
+		E45442B52C42DAF800476598 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B42C42DAF800476598 /* ScoreView.swift */; };
+		E45442B72C42DB4D00476598 /* StateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B62C42DB4D00476598 /* StateRow.swift */; };
+		E45442B92C42E48600476598 /* StateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B82C42E48600476598 /* StateDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E45442942C42D8EB00476598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E454427B2C42D8E800476598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E45442822C42D8E800476598;
+			remoteInfo = SimpleLicensePlateGame;
+		};
+		E454429E2C42D8EC00476598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E454427B2C42D8E800476598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E45442822C42D8E800476598;
+			remoteInfo = SimpleLicensePlateGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E45442832C42D8E800476598 /* SimpleLicensePlateGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLicensePlateGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45442862C42D8E800476598 /* SimpleLicensePlateGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLicensePlateGameApp.swift; sourceTree = "<group>"; };
+		E45442882C42D8E800476598 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E454428A2C42D8EB00476598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E454428D2C42D8EB00476598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E45442932C42D8EB00476598 /* SimpleLicensePlateGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLicensePlateGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45442972C42D8EC00476598 /* SimpleLicensePlateGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLicensePlateGameTests.swift; sourceTree = "<group>"; };
+		E454429D2C42D8EC00476598 /* SimpleLicensePlateGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLicensePlateGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45442A12C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLicensePlateGameUITests.swift; sourceTree = "<group>"; };
+		E45442A32C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLicensePlateGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E45442B02C42DA7400476598 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		E45442B22C42DAA700476598 /* StateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
+		E45442B42C42DAF800476598 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		E45442B62C42DB4D00476598 /* StateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRow.swift; sourceTree = "<group>"; };
+		E45442B82C42E48600476598 /* StateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E45442802C42D8E800476598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45442902C42D8EB00476598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E454429A2C42D8EC00476598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E454427A2C42D8E800476598 = {
+			isa = PBXGroup;
+			children = (
+				E45442852C42D8E800476598 /* SimpleLicensePlateGame */,
+				E45442962C42D8EB00476598 /* SimpleLicensePlateGameTests */,
+				E45442A02C42D8EC00476598 /* SimpleLicensePlateGameUITests */,
+				E45442842C42D8E800476598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E45442842C42D8E800476598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E45442832C42D8E800476598 /* SimpleLicensePlateGame.app */,
+				E45442932C42D8EB00476598 /* SimpleLicensePlateGameTests.xctest */,
+				E454429D2C42D8EC00476598 /* SimpleLicensePlateGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45442852C42D8E800476598 /* SimpleLicensePlateGame */ = {
+			isa = PBXGroup;
+			children = (
+				E45442862C42D8E800476598 /* SimpleLicensePlateGameApp.swift */,
+				E45442882C42D8E800476598 /* ContentView.swift */,
+				E45442B62C42DB4D00476598 /* StateRow.swift */,
+				E45442B42C42DAF800476598 /* ScoreView.swift */,
+				E454428A2C42D8EB00476598 /* Assets.xcassets */,
+				E454428C2C42D8EB00476598 /* Preview Content */,
+				E45442B02C42DA7400476598 /* State.swift */,
+				E45442B22C42DAA700476598 /* StateViewModel.swift */,
+				E45442B82C42E48600476598 /* StateDetailView.swift */,
+			);
+			path = SimpleLicensePlateGame;
+			sourceTree = "<group>";
+		};
+		E454428C2C42D8EB00476598 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E454428D2C42D8EB00476598 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E45442962C42D8EB00476598 /* SimpleLicensePlateGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				E45442972C42D8EC00476598 /* SimpleLicensePlateGameTests.swift */,
+			);
+			path = SimpleLicensePlateGameTests;
+			sourceTree = "<group>";
+		};
+		E45442A02C42D8EC00476598 /* SimpleLicensePlateGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E45442A12C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift */,
+				E45442A32C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift */,
+			);
+			path = SimpleLicensePlateGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E45442822C42D8E800476598 /* SimpleLicensePlateGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45442A72C42D8EC00476598 /* Build configuration list for PBXNativeTarget "SimpleLicensePlateGame" */;
+			buildPhases = (
+				E454427F2C42D8E800476598 /* Sources */,
+				E45442802C42D8E800476598 /* Frameworks */,
+				E45442812C42D8E800476598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleLicensePlateGame;
+			productName = SimpleLicensePlateGame;
+			productReference = E45442832C42D8E800476598 /* SimpleLicensePlateGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E45442922C42D8EB00476598 /* SimpleLicensePlateGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45442AA2C42D8EC00476598 /* Build configuration list for PBXNativeTarget "SimpleLicensePlateGameTests" */;
+			buildPhases = (
+				E454428F2C42D8EB00476598 /* Sources */,
+				E45442902C42D8EB00476598 /* Frameworks */,
+				E45442912C42D8EB00476598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E45442952C42D8EB00476598 /* PBXTargetDependency */,
+			);
+			name = SimpleLicensePlateGameTests;
+			productName = SimpleLicensePlateGameTests;
+			productReference = E45442932C42D8EB00476598 /* SimpleLicensePlateGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E454429C2C42D8EC00476598 /* SimpleLicensePlateGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E45442AD2C42D8EC00476598 /* Build configuration list for PBXNativeTarget "SimpleLicensePlateGameUITests" */;
+			buildPhases = (
+				E45442992C42D8EC00476598 /* Sources */,
+				E454429A2C42D8EC00476598 /* Frameworks */,
+				E454429B2C42D8EC00476598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E454429F2C42D8EC00476598 /* PBXTargetDependency */,
+			);
+			name = SimpleLicensePlateGameUITests;
+			productName = SimpleLicensePlateGameUITests;
+			productReference = E454429D2C42D8EC00476598 /* SimpleLicensePlateGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E454427B2C42D8E800476598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E45442822C42D8E800476598 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E45442922C42D8EB00476598 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E45442822C42D8E800476598;
+					};
+					E454429C2C42D8EC00476598 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E45442822C42D8E800476598;
+					};
+				};
+			};
+			buildConfigurationList = E454427E2C42D8E800476598 /* Build configuration list for PBXProject "SimpleLicensePlateGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E454427A2C42D8E800476598;
+			productRefGroup = E45442842C42D8E800476598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E45442822C42D8E800476598 /* SimpleLicensePlateGame */,
+				E45442922C42D8EB00476598 /* SimpleLicensePlateGameTests */,
+				E454429C2C42D8EC00476598 /* SimpleLicensePlateGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E45442812C42D8E800476598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E454428E2C42D8EB00476598 /* Preview Assets.xcassets in Resources */,
+				E454428B2C42D8EB00476598 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45442912C42D8EB00476598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E454429B2C42D8EC00476598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E454427F2C42D8E800476598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45442B32C42DAA700476598 /* StateViewModel.swift in Sources */,
+				E45442892C42D8E800476598 /* ContentView.swift in Sources */,
+				E45442B92C42E48600476598 /* StateDetailView.swift in Sources */,
+				E45442872C42D8E800476598 /* SimpleLicensePlateGameApp.swift in Sources */,
+				E45442B12C42DA7400476598 /* State.swift in Sources */,
+				E45442B72C42DB4D00476598 /* StateRow.swift in Sources */,
+				E45442B52C42DAF800476598 /* ScoreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E454428F2C42D8EB00476598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45442982C42D8EC00476598 /* SimpleLicensePlateGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45442992C42D8EC00476598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45442A22C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift in Sources */,
+				E45442A42C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E45442952C42D8EB00476598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E45442822C42D8E800476598 /* SimpleLicensePlateGame */;
+			targetProxy = E45442942C42D8EB00476598 /* PBXContainerItemProxy */;
+		};
+		E454429F2C42D8EC00476598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E45442822C42D8E800476598 /* SimpleLicensePlateGame */;
+			targetProxy = E454429E2C42D8EC00476598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E45442A52C42D8EC00476598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E45442A62C42D8EC00476598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E45442A82C42D8EC00476598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleLicensePlateGame/Preview Content\"";
+				DEVELOPMENT_TEAM = K4RQKPMFWC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.5m.SimpleLicensePlateGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E45442A92C42D8EC00476598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleLicensePlateGame/Preview Content\"";
+				DEVELOPMENT_TEAM = K4RQKPMFWC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.5m.SimpleLicensePlateGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E45442AB2C42D8EC00476598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4RQKPMFWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.5m.SimpleLicensePlateGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLicensePlateGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleLicensePlateGame";
+			};
+			name = Debug;
+		};
+		E45442AC2C42D8EC00476598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4RQKPMFWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.5m.SimpleLicensePlateGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLicensePlateGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleLicensePlateGame";
+			};
+			name = Release;
+		};
+		E45442AE2C42D8EC00476598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4RQKPMFWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.5m.SimpleLicensePlateGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleLicensePlateGame;
+			};
+			name = Debug;
+		};
+		E45442AF2C42D8EC00476598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K4RQKPMFWC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.5m.SimpleLicensePlateGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleLicensePlateGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E454427E2C42D8E800476598 /* Build configuration list for PBXProject "SimpleLicensePlateGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45442A52C42D8EC00476598 /* Debug */,
+				E45442A62C42D8EC00476598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45442A72C42D8EC00476598 /* Build configuration list for PBXNativeTarget "SimpleLicensePlateGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45442A82C42D8EC00476598 /* Debug */,
+				E45442A92C42D8EC00476598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45442AA2C42D8EC00476598 /* Build configuration list for PBXNativeTarget "SimpleLicensePlateGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45442AB2C42D8EC00476598 /* Debug */,
+				E45442AC2C42D8EC00476598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E45442AD2C42D8EC00476598 /* Build configuration list for PBXNativeTarget "SimpleLicensePlateGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45442AE2C42D8EC00476598 /* Debug */,
+				E45442AF2C42D8EC00476598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E454427B2C42D8E800476598 /* Project object */;
+}
