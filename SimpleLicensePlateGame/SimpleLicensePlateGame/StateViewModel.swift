@@ -143,10 +143,16 @@ class StateViewModel: ObservableObject {
             return decodedProvinces
         } else {
             return [
-                Province(name: "Ontario", isFound: false),
-                Province(name: "Quebec", isFound: false),
+                Province(name: "Alberta", isFound: false),
                 Province(name: "British Columbia", isFound: false),
-                // Add the rest of the provinces
+                Province(name: "Manitoba", isFound: false),
+                Province(name: "New Brunswick", isFound: false),
+                Province(name: "Newfoundland and Labrador", isFound: false),
+                Province(name: "Nova Scotia", isFound: false),
+                Province(name: "Ontario", isFound: false),
+                Province(name: "Prince Edward Island", isFound: false),
+                Province(name: "Quebec", isFound: false),
+                Province(name: "Saskatchewan", isFound: false)
             ]
         }
     }
