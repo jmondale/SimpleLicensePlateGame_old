@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct StateDetailView: View {
     var state: State
     
@@ -26,9 +28,23 @@ struct StateDetailView: View {
             Text("Additional information about \(state.name)")
                 .padding()
             
+            // State flag image
+            if let flagImage = UIImage(named: state.name) {
+                Image(uiImage: flagImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .padding()
+            } else {
+                Text("Flag image not available")
+                    .foregroundColor(.red)
+                    .padding()
+            }
+            
             Spacer()
         }
         .padding()
     }
 }
+
 
