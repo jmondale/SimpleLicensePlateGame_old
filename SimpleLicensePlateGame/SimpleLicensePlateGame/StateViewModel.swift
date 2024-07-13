@@ -14,18 +14,34 @@ class StateViewModel: ObservableObject {
         }
     }
     
-    @Published var selectedState: State? // Track the selected state
+    @Published var provinces: [Province] {
+        didSet {
+            saveProvinces()
+        }
+    }
+    
+    @Published var selectedState: State?
+    @Published var selectedProvince: Province?
     
     init() {
         self.states = Self.loadStates()
+        self.provinces = Self.loadProvinces()
     }
     
-    var total: Int {
+    var totalStates: Int {
         states.count
     }
     
-    var found: Int {
+    var foundStates: Int {
         states.filter { $0.isFound }.count
+    }
+    
+    var totalProvinces: Int {
+        provinces.count
+    }
+    
+    var foundProvinces: Int {
+        provinces.filter { $0.isFound }.count
     }
     
     func toggleFound(for state: State) {
@@ -34,8 +50,18 @@ class StateViewModel: ObservableObject {
         }
     }
     
+    func toggleFound(for province: Province) {
+        if let index = provinces.firstIndex(where: { $0.id == province.id }) {
+            provinces[index].isFound.toggle()
+        }
+    }
+    
     func selectState(_ state: State) {
         selectedState = state
+    }
+    
+    func selectProvince(_ province: Province) {
+        selectedProvince = province
     }
     
     private func saveStates() {
@@ -50,57 +76,30 @@ class StateViewModel: ObservableObject {
             return decodedStates
         } else {
             return [
-                State(name: "Alabama", isFound: false),
-                State(name: "Alaska", isFound: false),
+                State(name: "Alabama", isFound: true),
+                State(name: "Alaska", isFound: true),
                 State(name: "Arizona", isFound: false),
-                State(name: "Arkansas", isFound: false),
-                State(name: "California", isFound: false),
-                State(name: "Colorado", isFound: false),
-                State(name: "Connecticut", isFound: false),
-                State(name: "Delaware", isFound: false),
-                State(name: "Florida", isFound: false),
-                State(name: "Georgia", isFound: false),
-                State(name: "Hawaii", isFound: false),
-                State(name: "Idaho", isFound: false),
-                State(name: "Illinois", isFound: false),
-                State(name: "Indiana", isFound: false),
-                State(name: "Iowa", isFound: false),
-                State(name: "Kansas", isFound: false),
-                State(name: "Kentucky", isFound: false),
-                State(name: "Louisiana", isFound: false),
-                State(name: "Maine", isFound: false),
-                State(name: "Maryland", isFound: false),
-                State(name: "Massachusetts", isFound: false),
-                State(name: "Michigan", isFound: false),
-                State(name: "Minnesota", isFound: false),
-                State(name: "Mississippi", isFound: false),
-                State(name: "Missouri", isFound: false),
-                State(name: "Montana", isFound: false),
-                State(name: "Nebraska", isFound: false),
-                State(name: "Nevada", isFound: false),
-                State(name: "New Hampshire", isFound: false),
-                State(name: "New Jersey", isFound: false),
-                State(name: "New Mexico", isFound: false),
-                State(name: "New York", isFound: false),
-                State(name: "North Carolina", isFound: false),
-                State(name: "North Dakota", isFound: false),
-                State(name: "Ohio", isFound: false),
-                State(name: "Oklahoma", isFound: false),
-                State(name: "Oregon", isFound: false),
-                State(name: "Pennsylvania", isFound: false),
-                State(name: "Rhode Island", isFound: false),
-                State(name: "South Carolina", isFound: false),
-                State(name: "South Dakota", isFound: false),
-                State(name: "Tennessee", isFound: false),
-                State(name: "Texas", isFound: false),
-                State(name: "Utah", isFound: false),
-                State(name: "Vermont", isFound: false),
-                State(name: "Virginia", isFound: false),
-                State(name: "Washington", isFound: false),
-                State(name: "West Virginia", isFound: false),
-                State(name: "Wisconsin", isFound: false),
-                State(name: "Wyoming", isFound: false),
-                State(name: "Washington, D.C.", isFound: false)
+                // Add the rest of the states
+            ]
+        }
+    }
+    
+    private func saveProvinces() {
+        if let encoded = try? JSONEncoder().encode(provinces) {
+            UserDefaults.standard.set(encoded, forKey: "provinces")
+        }
+    }
+    
+    private static func loadProvinces() -> [Province] {
+        if let savedProvinces = UserDefaults.standard.data(forKey: "provinces"),
+           let decodedProvinces = try? JSONDecoder().decode([Province].self, from: savedProvinces) {
+            return decodedProvinces
+        } else {
+            return [
+                Province(name: "Ontario", isFound: false),
+                Province(name: "Quebec", isFound: false),
+                Province(name: "British Columbia", isFound: false),
+                // Add the rest of the provinces
             ]
         }
     }

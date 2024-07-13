@@ -19,6 +19,9 @@
 		E45442B52C42DAF800476598 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B42C42DAF800476598 /* ScoreView.swift */; };
 		E45442B72C42DB4D00476598 /* StateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B62C42DB4D00476598 /* StateRow.swift */; };
 		E45442B92C42E48600476598 /* StateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B82C42E48600476598 /* StateDetailView.swift */; };
+		E45442C32C42F82700476598 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442C22C42F82700476598 /* Province.swift */; };
+		E45442C52C42F8B700476598 /* ProvinceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442C42C42F8B700476598 /* ProvinceRow.swift */; };
+		E45442C72C42F8EB00476598 /* ProvinceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442C62C42F8EB00476598 /* ProvinceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		E45442B42C42DAF800476598 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		E45442B62C42DB4D00476598 /* StateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRow.swift; sourceTree = "<group>"; };
 		E45442B82C42E48600476598 /* StateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailView.swift; sourceTree = "<group>"; };
+		E45442C22C42F82700476598 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		E45442C42C42F8B700476598 /* ProvinceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceRow.swift; sourceTree = "<group>"; };
+		E45442C62C42F8EB00476598 /* ProvinceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E45442862C42D8E800476598 /* SimpleLicensePlateGameApp.swift */,
+				E45442C22C42F82700476598 /* Province.swift */,
 				E45442882C42D8E800476598 /* ContentView.swift */,
 				E45442B62C42DB4D00476598 /* StateRow.swift */,
 				E45442B42C42DAF800476598 /* ScoreView.swift */,
@@ -113,6 +120,8 @@
 				E45442B02C42DA7400476598 /* State.swift */,
 				E45442B22C42DAA700476598 /* StateViewModel.swift */,
 				E45442B82C42E48600476598 /* StateDetailView.swift */,
+				E45442C42C42F8B700476598 /* ProvinceRow.swift */,
+				E45442C62C42F8EB00476598 /* ProvinceDetailView.swift */,
 			);
 			path = SimpleLicensePlateGame;
 			sourceTree = "<group>";
@@ -275,10 +284,13 @@
 				E45442B32C42DAA700476598 /* StateViewModel.swift in Sources */,
 				E45442892C42D8E800476598 /* ContentView.swift in Sources */,
 				E45442B92C42E48600476598 /* StateDetailView.swift in Sources */,
+				E45442C72C42F8EB00476598 /* ProvinceDetailView.swift in Sources */,
 				E45442872C42D8E800476598 /* SimpleLicensePlateGameApp.swift in Sources */,
 				E45442B12C42DA7400476598 /* State.swift in Sources */,
 				E45442B72C42DB4D00476598 /* StateRow.swift in Sources */,
 				E45442B52C42DAF800476598 /* ScoreView.swift in Sources */,
+				E45442C32C42F82700476598 /* Province.swift in Sources */,
+				E45442C52C42F8B700476598 /* ProvinceRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
