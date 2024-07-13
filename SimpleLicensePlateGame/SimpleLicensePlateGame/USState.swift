@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct State: Identifiable, Codable {
+struct USState: Identifiable, Codable {
     let id: UUID
     let name: String
     var isFound: Bool

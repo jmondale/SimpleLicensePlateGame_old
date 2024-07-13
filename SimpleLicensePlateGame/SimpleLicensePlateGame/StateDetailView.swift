@@ -10,7 +10,7 @@ import SwiftUI
 import SwiftUI
 
 struct StateDetailView: View {
-    var state: State
+    var state: USState
     
     var body: some View {
         VStack {

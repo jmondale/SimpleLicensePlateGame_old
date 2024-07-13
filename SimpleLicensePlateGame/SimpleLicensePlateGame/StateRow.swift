@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StateRow: View {
     @ObservedObject var viewModel: StateViewModel
-    var state: State
+    var state: USState
     
     var body: some View {
         HStack {

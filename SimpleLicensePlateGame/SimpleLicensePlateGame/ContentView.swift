@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct ContentView: View {
     @StateObject private var viewModel = StateViewModel()
     
@@ -22,28 +24,32 @@ struct ContentView: View {
                         .padding(.bottom, 10)
                 }
                 
-                VStack(alignment: .leading) {
-                    Text("Provinces Score")
-                        .font(.headline)
-                        .padding(.leading)
-                    
-                    ScoreView(total: viewModel.totalProvinces, found: viewModel.foundProvinces)
-                        .padding(.bottom, 10)
-                }
-                
                 List {
-                    Section(header: Text("States")) {
+                    Section(header: Text("America States")) {
                         ForEach(viewModel.states) { state in
                             StateRow(viewModel: viewModel, state: state)
                         }
                     }
                     
-                    Section(header: Text("Provinces")) {
+                    // Province Score Section
+                    Section {
+                        VStack(alignment: .leading) {
+                            Text("Provinces Score")
+                                .font(.headline)
+                                .padding(.leading)
+                            
+                            ScoreView(total: viewModel.totalProvinces, found: viewModel.foundProvinces)
+                        }
+                        .padding(.bottom, 10)
+                    }
+                    
+                    Section(header: Text("Canada Provinces")) {
                         ForEach(viewModel.provinces) { province in
                             ProvinceRow(viewModel: viewModel, province: province)
                         }
                     }
                 }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("License Plates")
             .sheet(item: $viewModel.selectedState) { state in
@@ -55,6 +61,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 #Preview {
     ContentView()

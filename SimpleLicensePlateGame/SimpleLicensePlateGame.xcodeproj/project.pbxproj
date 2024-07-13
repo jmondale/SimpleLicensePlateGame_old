@@ -14,7 +14,7 @@
 		E45442982C42D8EC00476598 /* SimpleLicensePlateGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442972C42D8EC00476598 /* SimpleLicensePlateGameTests.swift */; };
 		E45442A22C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442A12C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift */; };
 		E45442A42C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442A32C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift */; };
-		E45442B12C42DA7400476598 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B02C42DA7400476598 /* State.swift */; };
+		E45442B12C42DA7400476598 /* USState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B02C42DA7400476598 /* USState.swift */; };
 		E45442B32C42DAA700476598 /* StateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B22C42DAA700476598 /* StateViewModel.swift */; };
 		E45442B52C42DAF800476598 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B42C42DAF800476598 /* ScoreView.swift */; };
 		E45442B72C42DB4D00476598 /* StateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442B62C42DB4D00476598 /* StateRow.swift */; };
@@ -52,7 +52,7 @@
 		E454429D2C42D8EC00476598 /* SimpleLicensePlateGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLicensePlateGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45442A12C42D8EC00476598 /* SimpleLicensePlateGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLicensePlateGameUITests.swift; sourceTree = "<group>"; };
 		E45442A32C42D8EC00476598 /* SimpleLicensePlateGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLicensePlateGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E45442B02C42DA7400476598 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		E45442B02C42DA7400476598 /* USState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USState.swift; sourceTree = "<group>"; };
 		E45442B22C42DAA700476598 /* StateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewModel.swift; sourceTree = "<group>"; };
 		E45442B42C42DAF800476598 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		E45442B62C42DB4D00476598 /* StateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRow.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				E45442B42C42DAF800476598 /* ScoreView.swift */,
 				E454428A2C42D8EB00476598 /* Assets.xcassets */,
 				E454428C2C42D8EB00476598 /* Preview Content */,
-				E45442B02C42DA7400476598 /* State.swift */,
+				E45442B02C42DA7400476598 /* USState.swift */,
 				E45442B22C42DAA700476598 /* StateViewModel.swift */,
 				E45442B82C42E48600476598 /* StateDetailView.swift */,
 				E45442C42C42F8B700476598 /* ProvinceRow.swift */,
@@ -286,7 +286,7 @@
 				E45442B92C42E48600476598 /* StateDetailView.swift in Sources */,
 				E45442C72C42F8EB00476598 /* ProvinceDetailView.swift in Sources */,
 				E45442872C42D8E800476598 /* SimpleLicensePlateGameApp.swift in Sources */,
-				E45442B12C42DA7400476598 /* State.swift in Sources */,
+				E45442B12C42DA7400476598 /* USState.swift in Sources */,
 				E45442B72C42DB4D00476598 /* StateRow.swift in Sources */,
 				E45442B52C42DAF800476598 /* ScoreView.swift in Sources */,
 				E45442C32C42F82700476598 /* Province.swift in Sources */,
