@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "british bolumbia.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

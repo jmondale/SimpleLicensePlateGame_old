@@ -27,7 +27,7 @@ struct ProvinceDetailView: View {
                 .padding()
             
             // Province flag image
-            if let flagImage = UIImage(named: province.name) {
+            if let flagImage = UIImage(named: province.name.lowercased()) {
                 Image(uiImage: flagImage)
                     .resizable()
                     .scaledToFit()
