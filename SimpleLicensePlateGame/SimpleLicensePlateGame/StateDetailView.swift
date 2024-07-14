@@ -41,9 +41,12 @@ struct StateDetailView: View {
                     .padding()
             }
             
-            // Description text
-            Text("Description about \(state.name). This section contains detailed information and history about the state, providing more context and interesting facts.")
-                .padding()
+            // Scrollable description text
+            ScrollView {
+                Text(state.description)
+                    .padding()
+            }
+            .frame(maxHeight: 400) // Adjust the height as needed
             
             Spacer()
         }

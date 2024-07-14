@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Alabama</key>
+    <string>Alabama, located in the southeastern region of the United States, is known for its rich history and cultural significance. It played a pivotal role in the Civil Rights Movement, with notable events such as the Montgomery Bus Boycott and the Selma to Montgomery marches. The state is home to the U.S. Space and Rocket Center in Huntsville, which celebrates its contributions to space exploration. Alabama boasts diverse natural landscapes, from the Appalachian Mountains in the north to the Gulf Coast beaches in the south. Additionally, it has a strong musical heritage, particularly in blues, country, and jazz. Its economy is supported by industries such as aerospace, finance, manufacturing, and mineral extraction, making it a state with a unique blend of history, culture, and economic vitality.</string>
+    <key>Alaska</key>
+    <string>Description about Alaska.</string>
+    <key>Arizona</key>
+    <string>Description about Arizona.</string>
+    <!-- Add the rest of the states and provinces -->
+</dict>
+</plist>
+

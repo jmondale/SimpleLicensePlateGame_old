@@ -24,8 +24,9 @@ class StateViewModel: ObservableObject {
     @Published var selectedProvince: Province?
     
     init() {
-        self.states = Self.loadStates()
-        self.provinces = Self.loadProvinces()
+        let descriptions = StateDescriptions.shared.descriptions
+        self.states = Self.loadStates(descriptions: descriptions)
+        self.provinces = Self.loadProvinces(descriptions: descriptions)
     }
     
     var totalStates: Int {
@@ -70,64 +71,63 @@ class StateViewModel: ObservableObject {
         }
     }
     
-    private static func loadStates() -> [USState] {
+    private static func loadStates(descriptions: [String: String]) -> [USState] {
         if let savedStates = UserDefaults.standard.data(forKey: "states"),
            let decodedStates = try? JSONDecoder().decode([USState].self, from: savedStates) {
             return decodedStates
         } else {
             return [
-                USState(name: "Alabama", isFound: false),
-                USState(name: "Alaska", isFound: false),
-                USState(name: "Arizona", isFound: false),
-                USState(name: "Arkansas", isFound: false),
-                USState(name: "California", isFound: false),
-                USState(name: "Colorado", isFound: false),
-                USState(name: "Connecticut", isFound: false),
-                USState(name: "Delaware", isFound: false),
-                USState(name: "Florida", isFound: false),
-                USState(name: "Georgia", isFound: false),
-                USState(name: "Hawaii", isFound: false),
-                USState(name: "Idaho", isFound: false),
-                USState(name: "Illinois", isFound: false),
-                USState(name: "Indiana", isFound: false),
-                USState(name: "Iowa", isFound: false),
-                USState(name: "Kansas", isFound: false),
-                USState(name: "Kentucky", isFound: false),
-                USState(name: "Louisiana", isFound: false),
-                USState(name: "Maine", isFound: false),
-                USState(name: "Maryland", isFound: false),
-                USState(name: "Massachusetts", isFound: false),
-                USState(name: "Michigan", isFound: false),
-                USState(name: "Minnesota", isFound: false),
-                USState(name: "Mississippi", isFound: false),
-                USState(name: "Missouri", isFound: false),
-                USState(name: "Montana", isFound: false),
-                USState(name: "Nebraska", isFound: false),
-                USState(name: "Nevada", isFound: false),
-                USState(name: "New Hampshire", isFound: false),
-                USState(name: "New Jersey", isFound: false),
-                USState(name: "New Mexico", isFound: false),
-                USState(name: "New York", isFound: false),
-                USState(name: "North Carolina", isFound: false),
-                USState(name: "North Dakota", isFound: false),
-                USState(name: "Ohio", isFound: false),
-                USState(name: "Oklahoma", isFound: false),
-                USState(name: "Oregon", isFound: false),
-                USState(name: "Pennsylvania", isFound: false),
-                USState(name: "Rhode Island", isFound: false),
-                USState(name: "South Carolina", isFound: false),
-                USState(name: "South Dakota", isFound: false),
-                USState(name: "Tennessee", isFound: false),
-                USState(name: "Texas", isFound: false),
-                USState(name: "Utah", isFound: false),
-                USState(name: "Vermont", isFound: false),
-                USState(name: "Virginia", isFound: false),
-                USState(name: "Washington", isFound: false),
-                USState(name: "West Virginia", isFound: false),
-                USState(name: "Wisconsin", isFound: false),
-                USState(name: "Wyoming", isFound: false),
-                USState(name: "Washington, D.C.", isFound: false)
-            ]
+                USState(name: "Alabama", isFound: false, description: descriptions["Alabama"] ?? "Description about Alabama."),
+                USState(name: "Alaska", isFound: false, description: "Description about Alabama."),
+                USState(name: "Arizona", isFound: false, description: "Description about Alabama."),
+                USState(name: "Arkansas", isFound: false, description: "Description about Alabama."),
+                USState(name: "California", isFound: false, description: "Description about Alabama."),
+                USState(name: "Colorado", isFound: false, description: "Description about Alabama."),
+                USState(name: "Connecticut", isFound: false, description: "Description about Alabama."),
+                USState(name: "Delaware", isFound: false, description: "Description about Alabama."),
+                USState(name: "Florida", isFound: false, description: "Description about Alabama."),
+                USState(name: "Georgia", isFound: false, description: "Description about Alabama."),
+                USState(name: "Hawaii", isFound: false, description: "Description about Alabama."),
+                USState(name: "Idaho", isFound: false, description: "Description about Alabama."),
+                USState(name: "Illinois", isFound: false, description: "Description about Alabama."),
+                USState(name: "Indiana", isFound: false, description: "Description about Alabama."),
+                USState(name: "Iowa", isFound: false, description: "Description about Alabama."),
+                USState(name: "Kansas", isFound: false, description: "Description about Alabama."),
+                USState(name: "Kentucky", isFound: false, description: "Description about Alabama."),
+                USState(name: "Louisiana", isFound: false, description: "Description about Alabama."),
+                USState(name: "Maine", isFound: false, description: "Description about Alabama."),
+                USState(name: "Maryland", isFound: false, description: "Description about Alabama."),
+                USState(name: "Massachusetts", isFound: false, description: "Description about Alabama."),
+                USState(name: "Michigan", isFound: false, description: "Description about Alabama."),
+                USState(name: "Minnesota", isFound: false, description: "Description about Alabama."),
+                USState(name: "Mississippi", isFound: false, description: "Description about Alabama."),
+                USState(name: "Missouri", isFound: false, description: "Description about Alabama."),
+                USState(name: "Montana", isFound: false, description: "Description about Alabama."),
+                USState(name: "Nebraska", isFound: false, description: "Description about Alabama."),
+                USState(name: "Nevada", isFound: false, description: "Description about Alabama."),
+                USState(name: "New Hampshire", isFound: false, description: "Description about Alabama."),
+                USState(name: "New Jersey", isFound: false, description: "Description about Alabama."),
+                USState(name: "New Mexico", isFound: false, description: "Description about Alabama."),
+                USState(name: "New York", isFound: false, description: "Description about Alabama."),
+                USState(name: "North Carolina", isFound: false, description: "Description about Alabama."),
+                USState(name: "North Dakota", isFound: false, description: "Description about Alabama."),
+                USState(name: "Ohio", isFound: false, description: "Description about Alabama."),
+                USState(name: "Oklahoma", isFound: false, description: "Description about Alabama."),
+                USState(name: "Oregon", isFound: false, description: "Description about Alabama."),
+                USState(name: "Pennsylvania", isFound: false, description: "Description about Alabama."),
+                USState(name: "Rhode Island", isFound: false, description: "Description about Alabama."),
+                USState(name: "South Carolina", isFound: false, description: "Description about Alabama."),
+                USState(name: "South Dakota", isFound: false, description: "Description about Alabama."),
+                USState(name: "Tennessee", isFound: false, description: "Description about Alabama."),
+                USState(name: "Texas", isFound: false, description: "Description about Alabama."),
+                USState(name: "Utah", isFound: false, description: "Description about Alabama."),
+                USState(name: "Vermont", isFound: false, description: "Description about Alabama."),
+                USState(name: "Virginia", isFound: false, description: "Description about Alabama."),
+                USState(name: "Washington", isFound: false, description: "Description about Alabama."),
+                USState(name: "West Virginia", isFound: false, description: "Description about Alabama."),
+                USState(name: "Wisconsin", isFound: false, description: "Description about Alabama."),
+                USState(name: "Wyoming", isFound: false, description: "Description about Alabama."),
+                USState(name: "Washington, D.C.", isFound: false, description: "Description about Alabama.")]
         }
     }
     
@@ -137,22 +137,22 @@ class StateViewModel: ObservableObject {
         }
     }
     
-    private static func loadProvinces() -> [Province] {
+    private static func loadProvinces(descriptions: [String: String]) -> [Province] {
         if let savedProvinces = UserDefaults.standard.data(forKey: "provinces"),
            let decodedProvinces = try? JSONDecoder().decode([Province].self, from: savedProvinces) {
             return decodedProvinces
         } else {
             return [
-                Province(name: "Alberta", isFound: false),
-                Province(name: "British Columbia", isFound: false),
-                Province(name: "Manitoba", isFound: false),
-                Province(name: "New Brunswick", isFound: false),
-                Province(name: "Newfoundland and Labrador", isFound: false),
-                Province(name: "Nova Scotia", isFound: false),
-                Province(name: "Ontario", isFound: false),
-                Province(name: "Prince Edward Island", isFound: false),
-                Province(name: "Quebec", isFound: false),
-                Province(name: "Saskatchewan", isFound: false)
+                Province(name: "Alberta", isFound: false, description: "Description about Ontario."),
+                Province(name: "British Columbia", isFound: false, description: "Description about Ontario."),
+                Province(name: "Manitoba", isFound: false, description: "Description about Ontario."),
+                Province(name: "New Brunswick", isFound: false, description: "Description about Ontario."),
+                Province(name: "Newfoundland and Labrador", isFound: false, description: "Description about Ontario."),
+                Province(name: "Nova Scotia", isFound: false, description: "Description about Ontario."),
+                Province(name: "Ontario", isFound: false, description: "Description about Ontario."),
+                Province(name: "Prince Edward Island", isFound: false, description: "Description about Ontario."),
+                Province(name: "Quebec", isFound: false, description: "Description about Ontario."),
+                Province(name: "Saskatchewan", isFound: false, description: "Description about Ontario.")
             ]
         }
     }
