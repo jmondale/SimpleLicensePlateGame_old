@@ -26,12 +26,13 @@ struct ProvinceDetailView: View {
             Text("Additional information about \(province.name)")
                 .padding()
             
-            // Province flag image
+            // Province flag image with background color for contrast
             if let flagImage = UIImage(named: province.name.lowercased()) {
                 Image(uiImage: flagImage)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
+                    .cornerRadius(10)
                     .padding()
             } else {
                 Text("Flag image not available")
@@ -42,6 +43,10 @@ struct ProvinceDetailView: View {
             Spacer()
         }
         .padding()
+        .background(Color.gray.opacity(0.1)) // Background color for the entire view
+        .cornerRadius(10) // Optional: To match the image's corner radius
+        .padding() // Padding around the entire view to separate it from the edges
+            
     }
 }
 
