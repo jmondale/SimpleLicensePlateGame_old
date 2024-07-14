@@ -29,7 +29,7 @@ struct StateDetailView: View {
                 .padding()
             
             // State flag image
-            if let flagImage = UIImage(named: state.name) {
+            if let flagImage = UIImage(named: state.name.lowercased()) {
                 Image(uiImage: flagImage)
                     .resizable()
                     .scaledToFit()
