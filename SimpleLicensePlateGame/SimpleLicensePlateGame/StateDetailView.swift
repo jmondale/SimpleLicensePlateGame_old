@@ -41,6 +41,10 @@ struct StateDetailView: View {
                     .padding()
             }
             
+            // Description text
+            Text("Description about \(state.name). This section contains detailed information and history about the state, providing more context and interesting facts.")
+                .padding()
+            
             Spacer()
         }
         .padding()
