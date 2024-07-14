@@ -78,7 +78,7 @@ class StateViewModel: ObservableObject {
         } else {
             return [
                 USState(name: "Alabama", isFound: false, description: descriptions["Alabama"] ?? "Description about Alabama."),
-                USState(name: "Alaska", isFound: false, description: "Description about Alabama."),
+                USState(name: "Alaska", isFound: false, description: descriptions["Alaska"] ?? "Description about Alaska."),
                 USState(name: "Arizona", isFound: false, description: "Description about Alabama."),
                 USState(name: "Arkansas", isFound: false, description: "Description about Alabama."),
                 USState(name: "California", isFound: false, description: "Description about Alabama."),
