@@ -33,6 +33,7 @@ struct StateDetailView: View {
                     .scaledToFit()
                     .frame(height: 200)
                     .cornerRadius(10)
+                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     .padding()
             } else {
                 Text("Flag image not available")
