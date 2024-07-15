@@ -143,16 +143,16 @@ class StateViewModel: ObservableObject {
             return decodedProvinces
         } else {
             return [
-                Province(name: "Alberta", isFound: false, description: "Description about Ontario."),
-                Province(name: "British Columbia", isFound: false, description: "Description about Ontario."),
-                Province(name: "Manitoba", isFound: false, description: "Description about Ontario."),
-                Province(name: "New Brunswick", isFound: false, description: "Description about Ontario."),
-                Province(name: "Newfoundland and Labrador", isFound: false, description: "Description about Ontario."),
-                Province(name: "Nova Scotia", isFound: false, description: "Description about Ontario."),
-                Province(name: "Ontario", isFound: false, description: "Description about Ontario."),
-                Province(name: "Prince Edward Island", isFound: false, description: "Description about Ontario."),
-                Province(name: "Quebec", isFound: false, description: "Description about Ontario."),
-                Province(name: "Saskatchewan", isFound: false, description: "Description about Ontario.")
+                Province(name: "Alberta", isFound: false, description: descriptions["Alberta"] ?? "Description about Alberta."),
+                Province(name: "British Columbia", isFound: false, description: descriptions["British Columbia"] ?? "Description about British Columbia."),
+                Province(name: "Manitoba", isFound: false, description: descriptions["Manitoba"] ?? "Description about Manitoba."),
+                Province(name: "New Brunswick", isFound: false, description: descriptions["New Brunswick"] ?? "Description about New Brunswick."),
+                Province(name: "Newfoundland and Labrador", isFound: false, description: descriptions["Newfoundland and Labrador"] ?? "Description about Newfoundland and Labrado."),
+                Province(name: "Nova Scotia", isFound: false, description: descriptions["Nova Scotia"] ?? "Description about Nova Scotia."),
+                Province(name: "Ontario", isFound: false, description: descriptions["Ontario"] ?? "Description about Ontario."),
+                Province(name: "Prince Edward Island", isFound: false, description: descriptions["Prince Edward Island"] ?? "Description about Prince Edward Island."),
+                Province(name: "Quebec", isFound: false, description: descriptions["Quebec"] ?? "Description about Quebec."),
+                Province(name: "Saskatchewan", isFound: false, description: descriptions["Saskatchewan"] ?? "Description about Saskatchewan.")
             ]
         }
     }

@@ -41,9 +41,12 @@ struct ProvinceDetailView: View {
                     .padding()
             }
             
-            // Description text
-            Text("Description about \(province.name). This section contains detailed information and history about the state, providing more context and interesting facts.")
-                .padding()
+            // Scrollable description text
+            ScrollView {
+                Text(province.description)
+                    .padding()
+            }
+            .frame(maxHeight: 400) // Adjust the height as needed
             
             Spacer()
         }
