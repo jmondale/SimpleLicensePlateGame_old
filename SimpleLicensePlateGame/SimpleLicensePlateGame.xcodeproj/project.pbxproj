@@ -24,6 +24,7 @@
 		E45442C72C42F8EB00476598 /* ProvinceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442C62C42F8EB00476598 /* ProvinceDetailView.swift */; };
 		E45442CB2C43663300476598 /* StateDescriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45442CA2C43663300476598 /* StateDescriptions.plist */; };
 		E45442CD2C43669F00476598 /* StateDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45442CC2C43669F00476598 /* StateDescriptions.swift */; };
+		E4A9A9AB2C474B4800A2AA4A /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9A9AA2C474B4800A2AA4A /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		E45442C62C42F8EB00476598 /* ProvinceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceDetailView.swift; sourceTree = "<group>"; };
 		E45442CA2C43663300476598 /* StateDescriptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StateDescriptions.plist; sourceTree = "<group>"; };
 		E45442CC2C43669F00476598 /* StateDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDescriptions.swift; sourceTree = "<group>"; };
+		E4A9A9AA2C474B4800A2AA4A /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				E45442C42C42F8B700476598 /* ProvinceRow.swift */,
 				E45442C62C42F8EB00476598 /* ProvinceDetailView.swift */,
 				E45442CC2C43669F00476598 /* StateDescriptions.swift */,
+				E4A9A9AA2C474B4800A2AA4A /* AppColors.swift */,
 			);
 			path = SimpleLicensePlateGame;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				E45442CD2C43669F00476598 /* StateDescriptions.swift in Sources */,
 				E45442B72C42DB4D00476598 /* StateRow.swift in Sources */,
 				E45442B52C42DAF800476598 /* ScoreView.swift in Sources */,
+				E4A9A9AB2C474B4800A2AA4A /* AppColors.swift in Sources */,
 				E45442C32C42F82700476598 /* Province.swift in Sources */,
 				E45442C52C42F8B700476598 /* ProvinceRow.swift in Sources */,
 			);
