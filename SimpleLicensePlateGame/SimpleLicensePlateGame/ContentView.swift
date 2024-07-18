@@ -8,71 +8,80 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = StateViewModel()
+    @ObservedObject private var viewModel = StateViewModel()
     
     var body: some View {
         NavigationView {
-            List {
-                // States Score Section
-                Section {
-                    VStack(alignment: .leading) {
-                        Text("States Score")
-                            .font(.headline)
-                            .padding(.leading)
-                            //.foregroundColor(Color.appPrimary)
-                        ScoreView(total: viewModel.totalStates, found: viewModel.foundStates)
-                            .padding(.bottom, 10)
-                    }
+            ZStack {
+                List {
+                    
+                    // States Score Section
+                    statesScoreSectionView
+                    
+                    // States list section
+                    statesSectionView
+                        
+                    // Province Score Section
+                    provinceScoreSectionView
+                    
+                    // States list section
+                    provinceSectionView
                     
                 }
-                //.background(Color.appBackground)
-                
-                // States Section
-                Section(header: Text("States")
-                    //.foregroundColor(Color.appPrimary)
-                    .padding()
-                    //.background(Color.appBackground)
-                ) {
-                    ForEach(viewModel.states) { state in
-                        StateRow(viewModel: viewModel, state: state)
-                        
-                    }
-                    //.listRowBackground(Color.appBackground.opacity(0.2))
+                .navigationTitle("License Plates")
+                .listStyle(.plain)
+                .sheet(item: $viewModel.selectedState) { state in
+                    StateDetailView(state: state)
                 }
-                
-                // Province Score Section
-                Section {
-                    VStack(alignment: .leading) {
-                        Text("Provinces Score")
-                            .font(.headline)
-                            .padding(.leading)
-                            //.foregroundColor(.primary)
-                        ScoreView(total: viewModel.totalProvinces, found: viewModel.foundProvinces)
-                    }
+                .sheet(item: $viewModel.selectedProvince) { province in
+                    ProvinceDetailView(province: province)
+                }
+            }
+            .background(Color.appBackground)
+        }
+    }
+    
+    private var statesScoreSectionView: some View {
+        Section {
+            VStack(alignment: .leading) {
+                Text("States Score")
+                    .font(.headline)
+                    .padding(.leading)
+                ScoreView(total: viewModel.totalStates, found: viewModel.foundStates)
                     .padding(.bottom, 10)
-                }
-                //.background(Color.background)
-                
-                // Provinces Section
-                Section(header: Text("Provinces")
-                    //.foregroundColor(Color.appPrimary)
-                    .padding()
-                    //.background(Color.appBackground)
-                ) {
-                    ForEach(viewModel.provinces) { province in
-                        ProvinceRow(viewModel: viewModel, province: province)
-                    }
-                    //.listRowBackground(Color.appBackground.opacity(0.2))
-                }
             }
-            .listStyle(PlainListStyle())
-            //.background(Color.appBackground.edgesIgnoringSafeArea(.all))
-            .navigationTitle("License Plates")
-            .sheet(item: $viewModel.selectedState) { state in
-                StateDetailView(state: state)
+            
+        }
+    }
+    
+    private var statesSectionView: some View {
+        Section(header: Text("States")
+            .padding()
+        ) {
+            ForEach(viewModel.states) { state in
+                StateRow(viewModel: viewModel, state: state)
             }
-            .sheet(item: $viewModel.selectedProvince) { province in
-                ProvinceDetailView(province: province)
+        }
+    }
+    
+    private var provinceScoreSectionView: some View {
+        Section {
+            VStack(alignment: .leading) {
+                Text("Provinces Score")
+                    .font(.headline)
+                    .padding(.leading)
+                ScoreView(total: viewModel.totalProvinces, found: viewModel.foundProvinces)
+            }
+            .padding(.bottom, 10)
+        }
+    }
+    
+    private var provinceSectionView: some View {
+        Section(header: Text("Provinces")
+            .padding()
+        ) {
+            ForEach(viewModel.provinces) { province in
+                ProvinceRow(viewModel: viewModel, province: province)
             }
         }
     }
