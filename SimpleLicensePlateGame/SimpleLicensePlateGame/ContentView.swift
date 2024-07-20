@@ -47,14 +47,12 @@ struct ContentView: View {
         Section(header: Text("States Score")
             .font(.headline)
             .foregroundColor(.appPrimary)
-            //.background(Color.clear)
             .padding()
         ) {
             VStack(alignment: .leading) {
                 ScoreView(total: viewModel.totalStates, found: viewModel.foundStates)
                 
             }
-            //.padding()
         }
         .listRowBackground(Color.appBackground)
     }
@@ -79,20 +77,24 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Provinces Score")
                     .font(.headline)
+                    .foregroundColor(.appPrimary)
                     .padding(.leading)
                 ScoreView(total: viewModel.totalProvinces, found: viewModel.foundProvinces)
             }
-            .padding(.bottom, 10)
+            .listRowBackground(Color.appBackground)
         }
     }
     
     private var provinceSectionView: some View {
-        Section(header: Text("Provinces")
+        Section(header: Text("Provinces").font(.headline)
+            .foregroundColor(.appPrimary)
+            .background(Color.clear)
             .padding()
         ) {
             ForEach(viewModel.provinces) { province in
                 ProvinceRow(viewModel: viewModel, province: province)
             }
+            .listRowBackground(Color.appBackground)
         }
     }
 }

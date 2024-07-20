@@ -32,7 +32,8 @@ struct ProvinceRow: View {
             .buttonStyle(BorderlessButtonStyle())
         }
         .padding()
-        .background(Color.gray.opacity(0.2))
+        .foregroundColor(.appPrimary)
+        .background(Color.white)
         .cornerRadius(10)
     }
 }
