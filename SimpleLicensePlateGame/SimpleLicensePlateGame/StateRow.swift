@@ -33,7 +33,7 @@ struct StateRow: View {
             .buttonStyle(BorderlessButtonStyle())
         }
         .padding()
-        .background(Color.gray.opacity(0.2))
+        .background(Color.white)
         .cornerRadius(10)
     }
 }
