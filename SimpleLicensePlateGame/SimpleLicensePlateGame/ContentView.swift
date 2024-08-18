@@ -38,7 +38,6 @@ struct ContentView: View {
                     }
                 }
                 .frame(width: geometry.size.width)
-                .background(Color.appBackground)
             }
         }
     }
@@ -46,7 +45,6 @@ struct ContentView: View {
     private var statesScoreSectionView: some View {
         Section(header: Text("States Score")
             .font(.headline)
-            .foregroundColor(.appPrimary)
             .padding()
         ) {
             VStack(alignment: .leading) {
@@ -54,20 +52,16 @@ struct ContentView: View {
                 
             }
         }
-        .listRowBackground(Color.appBackground)
     }
     
     private var statesSectionView: some View {
         Section(header: Text("States")
             .font(.headline)
-            .foregroundColor(.appPrimary)
-            .background(Color.clear)
             .padding()
         ) {
             ForEach(viewModel.states) { state in
                 StateRow(viewModel: viewModel, state: state)
             }
-            .listRowBackground(Color.appBackground)
         }
         
     }
@@ -77,24 +71,19 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Provinces Score")
                     .font(.headline)
-                    .foregroundColor(.appPrimary)
                     .padding(.leading)
                 ScoreView(total: viewModel.totalProvinces, found: viewModel.foundProvinces)
             }
-            .listRowBackground(Color.appBackground)
         }
     }
     
     private var provinceSectionView: some View {
         Section(header: Text("Provinces").font(.headline)
-            .foregroundColor(.appPrimary)
-            .background(Color.clear)
             .padding()
         ) {
             ForEach(viewModel.provinces) { province in
                 ProvinceRow(viewModel: viewModel, province: province)
             }
-            .listRowBackground(Color.appBackground)
         }
     }
 }

@@ -26,10 +26,7 @@ struct ScoreView: View {
             Spacer()
         }
         .padding()
-        .background(Color.white)
-        .foregroundColor(Color.appSecondary)
         .cornerRadius(10)
-        //.padding([.leading, .trailing])
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
     }
 }

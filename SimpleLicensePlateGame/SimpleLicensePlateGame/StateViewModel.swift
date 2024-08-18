@@ -147,7 +147,7 @@ class StateViewModel: ObservableObject {
                 Province(name: "British Columbia", isFound: false, description: descriptions["British Columbia"] ?? "Description about British Columbia."),
                 Province(name: "Manitoba", isFound: false, description: descriptions["Manitoba"] ?? "Description about Manitoba."),
                 Province(name: "New Brunswick", isFound: false, description: descriptions["New Brunswick"] ?? "Description about New Brunswick."),
-                Province(name: "Newfoundland and Labrador", isFound: false, description: descriptions["Newfoundland and Labrador"] ?? "Description about Newfoundland and Labrado."),
+                Province(name: "Newfoundland and Labrador", isFound: false, description: descriptions["Newfoundland and Labrador"] ?? "Description about Newfoundland and Labrador."),
                 Province(name: "Nova Scotia", isFound: false, description: descriptions["Nova Scotia"] ?? "Description about Nova Scotia."),
                 Province(name: "Ontario", isFound: false, description: descriptions["Ontario"] ?? "Description about Ontario."),
                 Province(name: "Prince Edward Island", isFound: false, description: descriptions["Prince Edward Island"] ?? "Description about Prince Edward Island."),
