@@ -239,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E454427E2C42D8E800476598 /* Build configuration list for PBXProject "SimpleLicensePlateGame" */;
+			buildConfigurationList = E454427E2C42D8E800476598 /* Build configuration list for PBXProject "Plate Quest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -595,7 +595,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E454427E2C42D8E800476598 /* Build configuration list for PBXProject "SimpleLicensePlateGame" */ = {
+		E454427E2C42D8E800476598 /* Build configuration list for PBXProject "Plate Quest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E45442A52C42D8EC00476598 /* Debug */,
